@@ -47,7 +47,10 @@ nav li {
     display: inline-block;
     margin: 0 10px;
 }
+nav a:hover{
+    color: #0056b3;
 
+}
 nav a {
     color: #333;
     text-decoration: none;
@@ -55,7 +58,7 @@ nav a {
 }
 
 .intro {
-    padding: 80px 0;
+    padding:40px 0;
     display: flex;
     align-items: center;
 }
@@ -122,10 +125,131 @@ p {
 .btn:hover {
     background-color: #0056b3;
 }
+/* --------------------------------ABOUT SECTION------------------------------- */
+#about {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  #about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+  }
+  
+  #about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #about .col-md-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+  
+  #about .col-md-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+  }
+  
+  #about img {
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image is scaled properly */
+    margin-bottom: 20px;
+  }
+  
+  #about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #about li {
+    margin-bottom: 10px;
+  }
+  
+  #about li::before {
+    content: "\2022";
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  /* -------------------------------skills---------------------------------------- */
+  .container2 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.skills-1{
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.progress {
+    width: 500%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar1 {
+    height: 100%;
+    background-color: #80a0c0;
+    border-radius: 5px;
+    width: 70%; /* Adjust the width for your skill level */
+}
+.progress-bar2 {
+    height: 100%;
+    background-color: #80a0c0;
+    border-radius: 5px;
+    width: 40%; /* Adjust the width for your skill level */
+}
+.progress-bar3 {
+    height: 100%;
+    background-color: #80a0c0;
+    border-radius: 5px;
+    width: 50%; /* Adjust the width for your skill level */
+}
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    align-items: center;
 }
